@@ -71,14 +71,14 @@ h1 {
 
 .sano_sabroso {
   margin-top: 7%;
-  margin-left: -20.5%;
+  margin-left: -27%;
   float: left;
   font-size: 30px;
 }
 
 .title2 {
   margin-top: 3%;
-  margin-left: 3%;
+  margin-left: -27%;
   float: left;
 }
 
@@ -307,6 +307,7 @@ h1 {
 .navbar {
   width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  z-index: 1;
 }
 
 .nav-container {
@@ -314,12 +315,14 @@ h1 {
   justify-content: space-between;
   align-items: center;
   height: 62px;
+  z-index: 1;
 }
 
 .navbar .menu-items {               /*FONDO MENU */
   display: flex;
   height: 150vh;
   background: rgba(255, 255, 255, 0.846);
+  z-index: 1;
 }
 
 .navbar .nav-container li {
@@ -332,7 +335,6 @@ h1 {
   font-weight: bolder;
   font-size: 1.2rem;
   padding: 0.7rem;
-  
 }
 
 .navbar .nav-container a:hover {
@@ -405,8 +407,8 @@ h1 {
 
 .navbar .menu-items li {
   margin-bottom: 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 550;
 }
 
 .logo {
@@ -436,3 +438,79 @@ h1 {
 .nav-container input[type="checkbox"]:checked ~ .logo {
   display: none;
 }
+
+.titulo_horarios{
+  color: #557174;
+  font-size: 35px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5%;
+  font-weight: bold;
+}
+
+.horario{
+  color: black;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5%;
+  font-weight: bold;
+}
+
+.cta {
+  position: relative;
+  margin-left: 47%;
+  margin-top: 5%;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #B8D283;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #557174;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #557174;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #B8D283;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
