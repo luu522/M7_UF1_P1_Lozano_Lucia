@@ -33,7 +33,7 @@ body {
 
 .contenedor {
   display: flex;
-  background-image: url(/images/frutas_principal.png);
+  background-image: url(images/frutas_principal.png);
   background-size: cover;
   height: 50vh;
   opacity: 0.2;
@@ -41,7 +41,7 @@ body {
 
 .contenedor_carta {
   display: flex;
-  background-image: url(/images/frutas_principal.png);
+  background-image: url(images/frutas_principal.png);
   background-size: cover;
   height: 15vh;
   opacity: 0.2;
@@ -583,7 +583,7 @@ textarea {
 .question:hover p,
 .question label:hover,
 input:hover::placeholder {
-  color: black;               /*BOTON DEL CALENDARIO COLOR*/
+  color: black; /*BOTON DEL CALENDARIO COLOR*/
 }
 .item input:hover,
 .item select:hover,
@@ -660,9 +660,10 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #C7CFB7;
+  background: #c7cfb7;
 }
-@media (min-width: 568px) {                      /*RESPONSIVE FORM */
+@media (min-width: 568px) {
+  /*RESPONSIVE FORM */
   .name-item,
   .city-item {
     display: flex;
@@ -682,21 +683,20 @@ button:hover {
   }
 }
 
-.reserva_nombre{
+.reserva_nombre {
   font-size: 25px;
   margin-left: 46%;
   margin-top: 2%;
-
 }
 
-.direccion_titulo{
+.direccion_titulo {
   font-size: 35px;
   font-weight: bold;
   margin-top: 1%;
   margin-left: 1.5%;
 }
 
-.direccion{
+.direccion {
   font-size: 25px;
   margin-top: 1%;
   color: black;
@@ -704,34 +704,34 @@ button:hover {
   margin-left: 2%;
 }
 
-.direccion_2{
+.direccion_2 {
   font-size: 25px;
   margin-left: 2%;
   margin-top: 1%;
-  color: #746C6C;
+  color: #746c6c;
   justify-content: center;
 }
 
-.informacion{
+.informacion {
   font-size: 25px;
   margin-left: 2%;
   margin-top: 1%;
-  color: #746C6C;
+  color: #746c6c;
   justify-content: center;
 }
 
-.link_hr{
+.link_hr {
   text-decoration: none;
-  color: #746C6C;
+  color: #746c6c;
   text-decoration: underline;
 }
 
-.mapa_google{
+.mapa_google {
   margin-left: 30%;
   margin-top: 2%;
 }
 
-.informacion_metro{
+.informacion_metro {
   font-size: 25px;
   margin-top: 1%;
   color: black;
