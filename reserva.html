@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/images/logo_sin_fondo.png" />
-    <link rel="stylesheet" href="styles.css"/>
-    
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+
+    <script src="main.js"></script>
+
     <title>GT</title>
   </head>
   <body class="nuestra_carta_fondo">
@@ -14,6 +27,7 @@
       <nav>
         <div class="navbar">
           <div class="container nav-container">
+            <a class="menu_letras">MENÚ</a>
             <input class="checkbox" type="checkbox" />
             <div class="hamburger-lines">
               <span class="line line1"></span>
@@ -34,10 +48,10 @@
                 <a href="horarios_reservas.html">HORARIOS Y RESERVAS</a>
               </li>
               <li>
-                <a href="#">RESERVA</a>
+                <a href="reserva.html">RESERVA</a>
               </li>
               <li>
-                <a href="#">¿DÓNDE ESTAMOS?</a>
+                <a href="donde_estamos.html">¿DÓNDE ESTAMOS?</a>
               </li>
             </div>
           </div>
@@ -53,9 +67,40 @@
         <p>FORMULARIO DE RESERVA</p>
       </div>
     </div>
-    <div class="reserva_card">
-        <h1>HAZ TU RESERVA</h1>
-        <p class="reserva">No pierdas la oportunidad, reserva ahora</p>
+    <div class="testbox">
+      <form onsubmit="return handle_form_submission()">
+        <div class="item">
+          <label for="name">Nombre y apellidos<span>*</span></label>
+          <input class="name" id="nombre" type="text" name="name" required/>
+        </div>
+        <div class="item">
+          <label for="email">Email<span>*</span></label>
+          <input id="email" type="email" name="email" required/>
+        </div>
+        <div class="item">
+          <label for="phone">Telefono<span>*</span></label>
+          <input id="phone" type="number" name="phone" required/>
+        </div>
+        <div class="item">
+          <label for="bdate">Fecha de la reserva<span>*</span></label>
+          <input id="bdate" type="date" name="bdate" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>Nº de personas</p>
+          <select>
+            <option selected value="" disabled selected></option>
+            <option value="course-type">1</option>
+            <option value="short-courses">2</option>
+            <option value="featured-courses">3</option>
+            <option value="undergraduate">4</option>
+            <option value="undergraduate">5</option>
+          </select>
+        </div>
+        <div class="btn-block">
+          <button type='submit'>RESERVAR</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
